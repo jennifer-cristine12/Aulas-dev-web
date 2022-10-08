@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <!--metadados-->
     <meta charset="UTF-8">
@@ -9,30 +9,57 @@
     <!--fim metadados-->
     <title>Aulas desenvolvimento web 1</title>
 </head>
+<div class="acessibilidade flex-container">
+    <ul class="atalhos">
+        <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a></li>
+        <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+        <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+    </ul>
+    <ul class="links_access">
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+        <li><a href="javascript:void(0);" id="contraste">Contraste</a></li>
+        <li><a href="javascript:void(0);" id="semcontraste">Sem Contraste</a></li>
+        <li><a href="javascript:void(0);" id="aumenta">A+</a></li>
+        <li><a href="javascript:void(0);" id="diminui">A-</a></li>
+    </ul>
+</div>
 <body><!--Imagem-->
-    <header><a href="Index.html"><img src="imagem/metadados.png" alt="Imagem contendo instruções html para comentarios" title="voltar para o inicio">
+    <header class="flex-container" id="topo">
+        <a href="Index.html"><img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="Imagem contendo instruções html para comentarios" title="voltar para o inicio">
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+              <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+              </script>
     </a>
     </header>
-    <Nav><!--Navegação-->
-        <ul>
+    <link rel="stylesheet" href="style.css">
+    <Nav class="flex-container"><!--Navegação-->
+        <ul class="menu">
             <li><a href="Index.html">Inicio</a></li>
             <li><a href="comentarios.html">comentarios</a></li>
-            <li><a href="javascript:void(0)">Listas</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="javascript:void(0)">Listas</a>
                 <ul>
                     <li><a href="ol.html">Lista ordenada</a></li>
                     <li><a href="ul.html">Lista não ordenada</a></li>
                 </ul>
-            <li><a href="metadados.html">Metadados</a></li>
             <li><a href="layout.html">Layout</a></li>
             <li><a href="formulario.html">Fale conosco</a></li>
     <ul>
 </Nav>
-<main><!--Conteudo-->
-    <h1>AULAS DESENVOLVIMENTO WEB</h1>
+<main id="conteudo" class="flex-container"><!--Conteudo-->
+  
     <h2>Metadados</h2>
    <p>Os comentarios são dados externos á pagina que são usados pelos navegadores (como exibir conteudo), <br> pelos mecanismos de busca</p>
+   <img class="imagem" src="imagem/metadados.png" alt="imagem contendo instruções html para lista ordenada">
 </main>
-<footer><!--rodapé-->
+<footer  class="flex-container" id="rodape"><!--rodapé-->
     <p>Dsenvolvimento por Jennifer <br>
     Todos os direitos reservados &copy; 2022</p>
 </footer>
