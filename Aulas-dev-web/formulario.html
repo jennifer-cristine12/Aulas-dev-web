@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html, metadados, comentarios, layout, listas">
+    <title>Document</title>
+</head>
+<body>
+    <title>Aulas desenvolvimento web 1</title>
+</head>
+<body>
+    <title>Aulas desenvolvimento web 1</title>
+    <link rel="stylesheet" href="style.css">
+    <header class="flex-container" id="topo"><a href="Index.html"><img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="logo Fatec Zona Leste nas cores cinza e vermelho" title="voltar para o inicio">
+    </a>
+    </header>
+    <Nav class="flex-container"><!--Navegação-->
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="comentarios.html">Comentarios</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="javascript:void(0)">Listas</a><ul>
+                <li><a href="ol.html">Lista ordenada</a></li>
+                <li><a href="ul.html">Lista não ordenada</a></li>
+            </ul></li>
+            
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="formulario.html">Fale conosco</a></li>
+           
+    <ul>
+</Nav>
+    <form action="" method="post" name="contato" id="contato">
+                
+        <fieldset id="cont"> 
+            <legend class="legend">Contato</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>    
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="E-mail" id="email" placeholder="E-mail principal" required>
+            <label for="CPF">CPF:</label>
+            <input type="CPF" name="CPF" id="CPF" placeholder="XXX.XXX.XXX-XX" required>
+        </fieldset>
+        <fieldset id="endereco">            
+            <legend class="legend">Endereço:</legend>
+            
+            <label for="CEP">CEP</label>
+            <input type="text" name="CEP" id="CEP" placeholder="99999-999">
+            <label for="numero"></label>
+            <legend>Rua</legend>
+            <label for="RUA:"></label>
+            <input type="text" name="rua" id="rua" placeholder="Nome da sua rua">
+            <legend>Numero</legend>
+            <input type="number" name="numero" id="numero" placeholder="Numero">
+            <label for="Estado"></label>
+            <legend>Estado</legend>
+            <input type="text" name="numero" id="numeor" placeholder="UF">
+        </fieldset>
+        <br>
+        <fieldset id="cursos">
+            <legend class="legend" >Cursos</legend>
+            <label for="Cursos">Selecione seu curso</label>
+               <select name="Cursos" id="Cursos" required>
+                <option value="Analise e desenvolvimento de sistemas">Analise e desenvolvimento de sistemas</option>
+                <option value="Recursos Humanos">Recursos Humanos</option>
+                <option value="Desenvolvimento De sistemas Multiplataforma">Desenvolvimento de Sistemas Multiplataforma</option>
+                <option value="Gestão Empresarial">Gestão Empresarial
+                </option>
+                <option value="Polimeros">Polímeros</option>
+               </select>
+        </fieldset>
+    </form>
+    </ol>
+    <footer class="flex-container" id="rodape">
+        <p>Desenvolvimento por Jennifer <br>
+        Todos os direitos reservados &copy; 2022</p>
+    </footer>
+</body>
+</html>

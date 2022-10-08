@@ -3,100 +3,189 @@
     padding: 0;
 }
 
+body{
+    font-size: 14px;
+}
+
 .flex-container{
     display: flex;
     width: 100%;
 }
-body{
-    font-size: 14px;
-}
-#topo{
+
+#topo {
+    justify-content: center;
     width: 100%;
     background-color: azure;
-    justify-content: center;
     height: auto;
-    
-    
 }
-
 #topo a{
+    justify-content: center;
+    display: flex;
     text-align: center;
-}
-
-.imagem{
-    width: 40%;
-    height: auto;
-   
 }
 nav{
     width: 100%;
-    background-color: #dc143c;
-    justify-content: center;
+    background-color:crimson;
     height: auto;
-   
-}
-.menu{
-    list-style: none;
-    display: inline-flex;
-    justify-content: space-around;
-    
-}
-.menu li{
-    position: relative;
-    padding: 10%;
-}
-.menu li a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    }
+.imagem{
+        
+        display: flex;
+        width: 40%;
+        height: auto;
+    }
+.menu{
+        list-style: none;
+        display: inline-flex;
+        justify-content: space-around;
+    }
     
-   
-}
+.menu li{
+        position: relative;
+        padding: 10%;
+    }
+.menu li a{
+        color: #fff;
+        position: relative;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 .menu li a:hover{
-    color: #000;
-    transition: 0.5s;
-}
+        color: #000;
+        transition: 0.5s;
+    }    
 .menu li ul{
-    display: block;
-    list-style: none;
-    position:absolute;
-    top: 70px;
-    left:0;
-    background-color: #dc143c;
-
-}
-.menu li :hover ul{
-    display: block;
-    width:170px;
-    transition: none;
-}
+        display: none;
+        position: absolute;
+        list-style: none;
+        top: 70px;
+        left: 0; 
+        color: crimson;
+        background-color: crimson;
+       
+    }
+.menu li:hover ul{
+        display: block;
+        position: absolute;
+       
+        
+    }    
 .menu li ul li{
-    display:block;
-    width: 70px;
-}
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    top: 5%;
+    left: 0%;
+    background-color: crimson;
+    }
+.menu li ul li a{
+        position: relative;
+        display: inline-block;
+        width: max-content;
+        top: 5%;
+        left: 0%;
+        background-color: crimson;
+    }
 #conteudo{
-    min-height: 700px;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-}
+        min-height: 700px;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    
+    }
+
 #conteudo h1{
     text-align: center;
+    padding-top: 2%;
 }
-#conteudo, p, ol, h2, img{
-    padding: 2% 5%;
+
+#conteudo p, ol, h2, img{
+    padding: 2%  5%;
+
 
 }
+
+fieldset  > label {
+    padding: 2%;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+fieldset{
+    border-radius: 5px;
+    background-color: #c9c9c9;
+    padding: 2%;
+    position: relative;
+    float: left;
+    display: inline;
+    padding-inline-start: 3%;
+    text-align: justify;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    clear: both;
+    
+}
+
+#contato{
+   width: 300px;
+}
+#endereco{
+    width: 200px;
+  
+}
+#cursos{
+   
+}
+form{
+    text-align: center;
+}
+
+label legend{
+ font-size: 1.5em;
+ padding: 100%;
+}
+input {
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+input, select {
+    text-align: left;
+    padding: 1% 5% 1% 5%;
+    border-radius: 15px;
+}
+
 #rodape{
     justify-content: center;
     text-align: center;
-    background-color: #a1a1a1;
+    background-color: #555;
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
+    color: #fff;
+    font-size: 1em;
     align-items: center;
     height: 80px;
+
+}
+.required::after{
+    content: " *";
+    background-color: red;
+
+}
+.video{
+    width: 60%;
+    height: auto;
+    align-self: center;
+}
+.legend{
+    background-color: aliceblue;
+    border-radius: 2px;
+    width: 140px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    
 }

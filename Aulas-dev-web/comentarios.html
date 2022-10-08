@@ -10,29 +10,33 @@
     <title>Aulas desenvolvimento web 1</title>
 </head>
 <body>
-    <header><a href="Index.html"><img src="imagem/comentarios.png" alt="Imagem contendo instruções html para comentarios" title="voltar para o inicio">
+    <link rel="stylesheet" href="style.css">
+    <header class="flex-container" id="topo"><a href="Index.html"><img src="imagem/comentarios.png" class="imagem" alt="Imagem contendo instruções html para comentarios" title="voltar para o inicio">
     </a>
     </header>
-    <Nav>
-        <ul>
+    <Nav class="flex-container"><!--Navegação-->
+        <ul class="menu">
             <li><a href="Index.html">Inicio</a></li>
-            <li><a href="comentarios.html">comentarios</a></li>
-            <li><a href="javascript:void(0)">Listas</a></li>
-                <ul>
-                    <li><a href="ol.html">Lista ordenada</a></li>
-                    <li><a href="ul.html">Lista não ordenada</a></li>
-                </ul>
+            <li><a href="comentarios.html">Comentarios</a></li>
             <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="javascript:void(0)">Listas</a><ul>
+                <li><a href="ol.html">Lista ordenada</a></li>
+                <li><a href="ul.html">Lista não ordenada</a></li>
+            </ul></li>
+            
             <li><a href="layout.html">Layout</a></li>
+            <li><a href="formulario.html">Fale conosco</a></li>
+           
     <ul>
 </Nav>
-<main>
+</Nav>
+<main id="conteudo" class="flex-container">
     <h1>AULAS DESENVOLVIMENTO WEB</h1>
     <h2>Comentarios</h2>
    <p>Os comentarios são dados que não aparecem no codigo</p>
 </main>
-<footer>
-    <p>Dsenvolvimento por Jennifer <br>
+<footer class="flex-container" id="rodape">
+    <p>Desenvolvimento por Jennifer <br>
     Todos os direitos reservados &copy; 2022</p>
 </footer>
 </body>
