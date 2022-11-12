@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+#topo {
+    justify-content: center;
+    width: 100%;
+    background-color: azure;
+    height: auto;
+}
+#topo a{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    background-color:crimson;
+    height: auto;
+    justify-content: center;
+    }
+.imagem{
+        
+        display: flex;
+        width: 40%;
+        height: auto;
+    }
+.menu{
+        list-style: none;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    
+.menu li{
+        position: relative;
+        padding: 10%;
+    }
+.menu li a{
+        color: #fff;
+        position: relative;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.menu li a:hover{
+        color: #000;
+        transition: 0.5s;
+    }    
+.menu li ul{
+        display: none;
+        position: absolute;
+        list-style: none;
+        top: 70px;
+        left: 0; 
+        color: crimson;
+        background-color: crimson;
+       
+    }
+.menu li:hover ul{
+        display: block;
+        position: absolute;
+       
+        
+    }    
+.menu li ul li{
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    top: 5%;
+    left: 0%;
+    background-color: crimson;
+    }
+.menu li ul li a{
+        position: relative;
+        display: inline-block;
+        width: max-content;
+        top: 5%;
+        left: 0%;
+        background-color: crimson;
+    }
+    label[for="bt_menu"],#bt_menu{
+        display: none;
+    }
+#conteudo{
+        min-height: 700px;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    
+    }
+
+#conteudo h1{
+    text-align: center;
+    padding-top: 2%;
+}
+
+#conteudo p, ol, h2, img{
+    padding: 2%  5%;
+
+
+}
+
+fieldset  > label {
+    padding: 2%;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+fieldset{
+    width: 70%; /*corrigido*/
+    border: none;
+    /*padding: 40px;*/ /*corrigido*/
+    margin: auto;
+    
+}
+
+form{
+    align-self: center;
+    padding: 2%;   
+}
+label, legend{
+    font-size: 0.7em;
+}
+input, select, textarea{
+    padding: 10px;
+    border-radius: 15px;
+    width: 80%; /*corrigido*/
+    
+}
+
+
+
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+.breadcrumb li a{
+    color: #555;
+}
+.breadcrumb li a:hover{
+    color: #000;
+}
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+#rodape{
+    justify-content: center;
+    text-align: center;
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1em;
+    align-items: center;
+    height: 80px;
+
+}
+.required::after{
+    content: "*";
+    color: red;
+
+}
+.video{
+    width: 60%;
+    height: auto;
+    align-self: center;
+}
+.legend{
+    background-color: aliceblue;
+    border-radius: 2px;
+    width: 140px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+/*midia quieres barra de acessibilidade*/
+
+
+
+
+@media screen and (max-width:1680px) {
+    .links_access{
+        margin-left: 40%;
+    }
+    #bt_menu{
+        display: none;
+    }
+  
+    
+}
+@media  screen and (max-width:1345px) {
+    .links_access{
+        margin-left: 40%;
+    }
+    
+}
+@media  screen and (max-width:1024px) {
+    .links_access{
+        margin-left: 25%;
+    }
+    
+}
+
+@media screen and (max-width:850px) {
+    .atalhos{
+        display: none;
+        
+    }
+    .links_access{
+        margin:auto
+    }
+}
+
+/*media queries menu repositorio*/
+@media screen and (max-width: 740px) {
+    nav{
+        justify-content: left;
+    }
+    .menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display:block;
+        margin: 2%;
+
+    }
+    #bt_menu:checked ~.menu{
+        display:block;
+    }
+    .menu li{
+        padding: 10% 1px;
+        
+    }
+
+    
+}
